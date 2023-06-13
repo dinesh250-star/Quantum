@@ -10,7 +10,9 @@ html,
 body {
   margin: 0px;
   background-color: #eeeeee;
+  height: 100%;
 }
+
 .img-navbar {
   width: 100%;
   height: 56px;
@@ -43,16 +45,237 @@ body {
   font-size: 25.94px;
   position: absolute;
 }
+
 .form-header {
   display: inline-block;
   padding: 0px;
   margin-left: 77px;
-
-  width: 236px;
-  height: 30px;
+  margin-bottom: 0;
   margin-top: 0;
   position: absolute;
   margin-top: -4px;
   font-family: "QuicksandM";
   font-size: 24px;
+  width: 236px;
+  height: 30px;
+  padding-bottom: 32px;
+}
+input {
+  accent-color: green;
+}
+
+.secondrow {
+  display: inline-block;
+  position: relative;
+  top: 55px;
+  width: 295px;
+  height: 24px;
+}
+.radio-font {
+  font-family: "QuicksandM";
+  font-size: 16px;
+}
+/* .btn2 {
+  margin-left: 32px;
+  width: 20px;
+  height: 24px;
+}
+.btn1 {
+  width: 20px;
+  height: 24px;
+} */
+
+.block-css {
+  display: block;
+}
+.state-css {
+  margin-top: 25px;
+  font-family: "QuicksandM";
+  font-size: 12px;
+  color: #666666;
+}
+input {
+  border: none;
+}
+.district-css {
+  margin-top: 36px;
+  color: #666666;
+  font-family: "QuicksandM";
+  font-size: 12px;
+}
+/* .thirdrow {
+  width: 424px;
+  height: 45px;
+  border-bottom: 2px solid #e3e3e3;
+}
+.fourthrow {
+  width: 424px;
+  height: 45px;
+  border-bottom: 2px solid #e3e3e3;
+} */
+/* input[type="text"] {
+  width: 424px;
+  height: 45px;
+  border-bottom: 2px solid #e3e3e3;
+} */
+
+.datal {
+  /* Enable the default hover effect */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none !important;
+  width: 424px;
+  height: 20px;
+  border-bottom: 2px solid #e3e3e3;
+}
+.username {
+  margin-top: 56px;
+  width: 424px;
+  height: 25px;
+  border-bottom: 2px solid #e3e3e3;
+}
+.username::placeholder {
+  font-family: "QuicksandM";
+  font-size: 16px;
+  color: #666666;
+}
+.label-fu {
+  font-family: "QuicksandM";
+  font-size: 14px;
+  color: #1f7a54;
+  display: block;
+  text-align: right;
+  width: 424px;
+  height: 18px;
+  line-height: 18px;
+}
+.password {
+  margin-top: 33px;
+  width: 424px;
+  height: 25px;
+  border-bottom: 2px solid #e3e3e3;
+}
+.password::placeholder {
+  font-family: "QuicksandM";
+  font-size: 16px;
+  color: #666666;
+}
+.label-fp {
+  font-family: "QuicksandM";
+  font-size: 14px;
+  color: #1f7a54;
+  display: block;
+  text-align: right;
+  width: 424px;
+  height: 18px;
+  line-height: 18px;
+}
+.rememberPassword {
+  padding: 0;
+  margin: 0;
+  margin-top: 24px;
+}
+input[type="checkbox"] {
+  display: none;
+}
+/* input[type="radio"] {
+  display: none;
+} */
+
+input[type="checkbox"]:checked + label #checkbox-checked {
+  display: inline-block;
+}
+input[type="checkbox"]:checked + label #checkbox-unchecked {
+  display: none;
+}
+
+#checkbox-checked {
+  display: none;
+  vertical-align: middle;
+  width: 24px;
+  padding-bottom: 3px;
+}
+
+#checkbox-unchecked {
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+
+  padding-bottom: 3px;
+}
+.seven {
+  vertical-align: middle;
+}
+.remP {
+  font-family: "QuicksandM";
+  font-size: 16px;
+}
+.eight {
+  margin-top: 34px;
+}
+.btn-submit {
+  width: 215.5px;
+  height: 40px;
+  margin-left: 136px;
+  color: black;
+  background-color: #3fd28b;
+  box-shadow: 0px 3px 5px #0000003d;
+  border: none;
+  font-family: "QuicksandM";
+  font-size: 14px;
+}
+::-ms-reveal {
+  background-image: url("../assets/icons/preview.svg");
+}
+
+.inline-css {
+  display: inline-block;
+  font-size: 14px;
+  font-family: "QuicksandM";
+}
+.abt {
+  border-right: 2px solid #d5d5d5;
+  color: #3fd28b;
+  padding-right: 9px;
+  text-decoration: none;
+}
+.con {
+  color: #3fd28b;
+  padding-left: 9px;
+  text-decoration: none;
+}
+.foot {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 24px;
+}
+.footer {
+  width: 100%;
+  height: 40px;
+  display: inline-block;
+  background-color: #e0e1e1;
+  text-align: center;
+  padding-top: 13px;
+}
+.footer-logo {
+  display: inline-block;
+  width: 90px;
+  height: 24px;
+  vertical-align: middle;
+  border-right: 3px solid #cacaca;
+  padding-right: 16px;
+}
+p {
+  display: inline-block;
+  margin: 0;
+  vertical-align: middle;
+  padding-left: 16px;
+  font-family: "QuicksandM";
+  font-size: 12px;
+  color: #656565;
+}
+.bold {
+  font-family: "QuicksandB";
+  font-size: 12px;
+  color: #666666;
 }
