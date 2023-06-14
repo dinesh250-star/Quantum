@@ -217,12 +217,10 @@ input[type="checkbox"]:checked + label #checkbox-unchecked {
   width: 215.5px;
   height: 40px;
   margin-left: 136px;
-  color: black;
+
   background-color: #3fd28b;
   box-shadow: 0px 3px 5px #0000003d;
   border: none;
-  font-family: "QuicksandM";
-  font-size: 14px;
 }
 ::-ms-reveal {
   background-image: url("../assets/icons/preview.svg");
@@ -278,4 +276,18 @@ p {
   font-family: "QuicksandB";
   font-size: 12px;
   color: #666666;
+}
+.unstyle-a {
+  text-decoration: none;
+  font-family: "QuicksandM";
+  font-size: 14px;
+  color: black;
+}
+.boldF {
+  font-family: "QuicksandB";
+  font-size: 16px;
+}
+.mediumF {
+  font-family: "QuicksandM";
+  font-size: 16px;
 }

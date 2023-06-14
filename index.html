@@ -38,7 +38,7 @@
           </div>
           <div class="thirdrow">
             <label for="state" class="block-css state-css">State*</label>
-            <input list="us_states" name="state" id="state" class="datal" />
+            <input list="us_states" id="state" class="datal" />
             <datalist id="us_states">
               <option value="al" label="Alabama">Alabama</option>
               <option value="ak" label="Alaska">Alaska</option>
@@ -96,12 +96,7 @@
             <label for="browser" class="block-css district-css"
               >District*</label
             >
-            <input
-              list="us_districts"
-              name="browser"
-              id="browser"
-              class="datal"
-            />
+            <input list="us_districts" id="browser" class="datal" />
             <datalist id="us_districts">
               <option value="Edgesdfa"></option>
               <option value="Firefoxasdf"></option>
@@ -114,7 +109,6 @@
             <input
               type="text"
               id="fname"
-              name="fname"
               placeholder="Username/Email ID*"
               class="username"
             />
@@ -124,7 +118,6 @@
             <input
               type="password"
               id="fname"
-              name="fname"
               placeholder="Password*"
               class="password"
             />
@@ -134,7 +127,6 @@
             <input
               type="checkbox"
               id="vehicle1"
-              name="vehicle1"
               value="Bike"
               class="rememberPassword"
             />
@@ -184,7 +176,9 @@
             ><br />
           </div>
           <div class="eight">
-            <button type="submit" class="btn-submit">LOG IN</button>
+            <button type="submit" class="btn-submit">
+              <a href="dashboard.html" class="unstyle-a">LOG IN</a>
+            </button>
           </div>
         </div>
       </form>
