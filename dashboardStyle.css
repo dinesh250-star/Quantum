@@ -143,25 +143,28 @@ input {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
   grid-row: 6/7;
   grid-column: 2/3;
 }
 .card {
-  min-width: 48%;
-  max-width: 80%;
+  min-width: 550px;
+
   border: 2px solid #ffffff;
   margin-bottom: 25px;
   margin-left: auto;
   margin-right: auto;
   height: 246px;
   background-color: white;
+  padding-right: 24px;
+  padding-left: 24px;
 }
 .cardI {
   display: flex;
   padding-top: 24px;
   padding-bottom: 16px;
-  padding-right: 24px;
-  padding-left: 24px;
+  /* padding-right: 24px;
+  padding-left: 24px; */
   border-bottom: 2px solid #e1e1e1;
 }
 .cardF {
@@ -189,8 +192,17 @@ input {
   padding-right: 9px;
 }
 .moveCI {
-  margin-left: 440px;
+  display: inline-block;
+  /* position: relative;
+  left: 310px; */
+  margin-left: 300px;
 }
+.card2 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 16px;
+}
+
 .inline-css {
   display: inline-block;
   font-size: 14px;
