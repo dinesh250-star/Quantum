@@ -53,6 +53,8 @@ body {
 .link {
   text-decoration: none;
   color: #3fd28b;
+  font-family: "QuicksandM";
+  font-size: 14px;
 }
 .active {
   color: white;
@@ -93,6 +95,17 @@ body {
 }
 .adjustI {
   vertical-align: bottom;
+}
+.adjustStar {
+  display: flex;
+  flex-direction: row;
+  /* width: 248px; */
+}
+.item:first-child {
+  margin-right: auto;
+}
+.item:last-child {
+  margin-left: auto;
 }
 .boldF {
   font-family: "QuicksandB";
@@ -148,8 +161,8 @@ input {
   grid-column: 2/3;
 }
 .card {
-  min-width: 550px;
-
+  max-width: 600px;
+  min-width: 476px;
   border: 2px solid #ffffff;
   margin-bottom: 25px;
   margin-left: auto;
@@ -158,6 +171,11 @@ input {
   background-color: white;
   padding-right: 24px;
   padding-left: 24px;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+.profile {
+  margin-right: 27px;
 }
 .cardI {
   display: flex;
@@ -191,12 +209,12 @@ input {
 .moveC {
   padding-right: 9px;
 }
-.moveCI {
+/* .moveCI {
   display: inline-block;
-  /* position: relative;
-  left: 310px; */
+  position: relative;
+  left: 310px;
   margin-left: 300px;
-}
+} */
 .card2 {
   display: flex;
   justify-content: space-around;
@@ -263,7 +281,34 @@ img .cardI {
 #ham {
   display: none;
 }
-@media (max-width: 768px) {
+.icon-opacity {
+  opacity: 0.4;
+}
+.iconNotification2 {
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  background-color: #2a7ff3;
+  color: white;
+  text-align: center;
+  line-height: 17px;
+  position: relative;
+  top: -8px;
+  right: 14px;
+}
+.iconNotification3 {
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  background-color: white;
+  color: black;
+  text-align: center;
+  line-height: 21px;
+  position: relative;
+  top: -8px;
+  right: 37px;
+}
+@media (max-width: 910px) {
   /* Add your styles here */
   .menu {
     display: none;
@@ -274,5 +319,51 @@ img .cardI {
   }
   .move {
     margin-left: auto;
+  }
+  .profile {
+    margin-right: 0px;
+  }
+}
+@media (max-width: 1400px) {
+  /* Add your styles here */
+  .cardC {
+    display: flex;
+    flex-direction: column;
+  }
+  .card {
+    min-width: 600px;
+
+    border: 2px solid #ffffff;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 246px;
+    background-color: white;
+    padding-right: 24px;
+    padding-left: 24px;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* Add your styles here */
+  .cardC {
+    display: flex;
+    flex-direction: column;
+  }
+  .card {
+    min-width: 476px;
+
+    border: 2px solid #ffffff;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 246px;
+    background-color: white;
+    padding-right: 24px;
+    padding-left: 24px;
+    flex-grow: 1;
+    flex-shrink: 1;
   }
 }
