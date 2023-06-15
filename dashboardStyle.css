@@ -155,14 +155,14 @@ input {
 .cardC {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 
   grid-row: 6/7;
   grid-column: 2/3;
 }
 .card {
   max-width: 600px;
-  min-width: 476px;
+  min-width: 500px;
   border: 2px solid #ffffff;
   margin-bottom: 25px;
   margin-left: auto;
@@ -170,7 +170,7 @@ input {
   height: 246px;
   background-color: white;
   padding-right: 24px;
-  padding-left: 24px;
+  /* padding-left: 24px; */
   flex-grow: 1;
   flex-shrink: 1;
 }
@@ -181,9 +181,13 @@ input {
   display: flex;
   padding-top: 24px;
   padding-bottom: 16px;
+  padding-left: 24px;
   /* padding-right: 24px;
   padding-left: 24px; */
   border-bottom: 2px solid #e1e1e1;
+}
+.cardI.expire {
+  padding-top: 6px;
 }
 
 .cardF {
@@ -340,7 +344,7 @@ img .cardI {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-/* .expired {
+.expired {
   height: 12px;
   width: 40px;
   font-family: "Museo Sans 500";
@@ -348,7 +352,12 @@ img .cardI {
   background-color: #ffe4e6;
   color: #d80000;
   padding: 4px 7px 2px 5px;
-} */
+  margin-top: -2px;
+  margin-left: -2px;
+}
+.expired.disable {
+  display: none;
+}
 @media (max-width: 910px) {
   /* Add your styles here */
   .menu {
@@ -381,7 +390,7 @@ img .cardI {
     height: 246px;
     background-color: white;
     padding-right: 24px;
-    padding-left: 24px;
+    padding-left: 0px;
     flex-grow: 1;
     flex-shrink: 1;
   }
@@ -403,7 +412,7 @@ img .cardI {
     height: 246px;
     background-color: white;
     padding-right: 24px;
-    padding-left: 24px;
+    padding-left: 0px;
     flex-grow: 1;
     flex-shrink: 1;
   }
