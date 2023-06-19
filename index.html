@@ -7,185 +7,204 @@
     <title>Quantum</title>
   </head>
   <body>
-    <nav class="navbar">
-      <img
-        src="./assets/images/headerPatternImage.png"
-        alt="bg-image-for-navbar"
-        class="img-navbar"
-      />
-      <img
-        src="./assets/images/logo used in header.svg"
-        alt="logo-for-navbar"
-        class="logo-navbar"
-      />
-    </nav>
+    <div class="main">
+      <nav class="navbar">
+        <img
+          src="./assets/images/headerPatternImage.png"
+          alt="bg-image-for-navbar"
+          class="img-navbar"
+        />
+        <img
+          src="./assets/images/logo used in header.svg"
+          alt="logo-for-navbar"
+          class="logo-navbar"
+        />
+      </nav>
 
-    <div class="form">
-      <div class="firstrow">
-        <img src="./assets/icons/back.svg" class="img-back" alt="back-arrow" />
-        <h1 class="form-header">Log in with Quantum</h1>
-      </div>
-
-      <form action="" class="form-group">
-        <div class="secondrow">
-          <div>
-            <input type="radio" class="radio-btn btn1" name="age" value="30" />
-
-            <label for="age1" class="radio-font"> District</label>
-            <input type="radio" class="radio-btn btn2" name="age" value="60" />
-
-            <label for="age2" class="radio-font">Independent school</label>
-          </div>
-          <div class="thirdrow">
-            <label for="state" class="block-css state-css">State*</label>
-            <input list="us_states" id="state" class="datal" required />
-            <datalist id="us_states">
-              <option value="al" label="Alabama">Alabama</option>
-              <option value="ak" label="Alaska">Alaska</option>
-              <option value="az" label="Arizona">Arizona</option>
-              <option value="ar" label="Arkansas">Arkansas</option>
-              <option value="ca" label="California">California</option>
-              <option value="co" label="Colorado">Colorado</option>
-              <option value="ct" label="Connecticut">Connecticut</option>
-              <option value="de" label="Delaware">Delaware</option>
-              <option value="fl" label="Florida">Florida</option>
-              <option value="ga" label="Georgia">Georgia</option>
-              <option value="hi" label="Hawaii">Hawaii</option>
-              <option value="id" label="Idaho">Idaho</option>
-              <option value="il" label="Illinois">Illinois</option>
-              <option value="in" label="Indiana">Indiana</option>
-              <option value="ia" label="Iowa">Iowa</option>
-              <option value="ks" label="Kansas">Kansas</option>
-              <option value="ky" label="Kentucky">Kentucky</option>
-              <option value="la" label="Louisiana">Louisiana</option>
-              <option value="me" label="Maine">Maine</option>
-              <option value="md" label="Maryland">Maryland</option>
-              <option value="ma" label="Massachusetts">Massachusetts</option>
-              <option value="mi" label="Michigan">Michigan</option>
-              <option value="mn" label="Minnesota">Minnesota</option>
-              <option value="ms" label="Mississippi">Mississippi</option>
-              <option value="mo" label="Missouri">Missouri</option>
-              <option value="mt" label="Montana">Montana</option>
-              <option value="ne" label="Nebraska">Nebraska</option>
-              <option value="nv" label="Nevada">Nevada</option>
-              <option value="nh" label="New Hampshire">New Hampshire</option>
-              <option value="nj" label="New Jersey">New Jersey</option>
-              <option value="nm" label="New Mexico">New Mexico</option>
-              <option value="ny" label="New York">New York</option>
-              <option value="nc" label="North Carolina">North Carolina</option>
-              <option value="nd" label="North Dakota">North Dakota</option>
-              <option value="oh" label="Ohio">Ohio</option>
-              <option value="ok" label="Oklahoma">Oklahoma</option>
-              <option value="or" label="Oregon">Oregon</option>
-              <option value="pa" label="Pennsylvania">Pennsylvania</option>
-              <option value="ri" label="Rhode Island">Rhode Island</option>
-              <option value="sc" label="South Carolina">South Carolina</option>
-              <option value="ds" label="South Dakota">South Dakota</option>
-              <option value="tn" label="Tennessee">Tennessee</option>
-              <option value="tx" label="Texas">Texas</option>
-              <option value="ut" label="Utah">Utah</option>
-              <option value="vt" label="Vermont">Vermont</option>
-              <option value="va" label="Virginia">Virginia</option>
-              <option value="wa" label="Washington">Washington</option>
-              <option value="wv" label="West Virginia">West Virginia</option>
-              <option value="wi" label="Wisconsin">Wisconsin</option>
-              <option value="wy" label="Wyoming">Wyoming</option>
-            </datalist>
-          </div>
-          <div class="fourthrow">
-            <label for="browser" class="block-css district-css"
-              >District*</label
-            >
-            <input list="us_districts" id="browser" class="datal" required />
-            <datalist id="us_districts">
-              <option value="Edgesdfa"></option>
-              <option value="Firefoxasdf"></option>
-              <option value="Chromeasdf"></option>
-              <option value="Operaafsd"></option>
-              <option value="Safarasfdasdfi"></option>
-            </datalist>
-          </div>
-          <div class="fifthrow">
-            <input
-              type="text"
-              id="fname"
-              placeholder="Username/Email ID*"
-              class="username"
-            />
-            <label for="fname" class="label-fu">FORGOT USERNAME?</label>
-          </div>
-          <div class="sixthrow">
-            <input
-              type="password"
-              required
-              id="fname"
-              placeholder="Password*"
-              class="password"
-            />
-            <label for="fname" class="label-fp">FORGOT PASSWORD?</label><br />
-          </div>
-          <div class="seven">
-            <input
-              type="checkbox"
-              id="vehicle1"
-              required
-              value="Bike"
-              class="rememberPassword"
-            />
-
-            <label for="vehicle1" class="remP">
-              <svg
-                id="checkbox-unchecked"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  id="Path_3677"
-                  data-name="Path 3677"
-                  d="M19,5V19H5V5H19m0-2H5A2.006,2.006,0,0,0,3,5V19a2.006,2.006,0,0,0,2,2H19a2.006,2.006,0,0,0,2-2V5A2.006,2.006,0,0,0,19,3Z"
-                  fill="#1f7a54"
-                />
-                <path
-                  id="Path_3678"
-                  data-name="Path 3678"
-                  d="M0,0H24V24H0Z"
-                  fill="none"
-                />
-              </svg>
-              <svg
-                id="checkbox-checked"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  id="Path_3675"
-                  data-name="Path 3675"
-                  d="M0,0H24V24H0Z"
-                  fill="none"
-                />
-                <path
-                  id="Path_3676"
-                  data-name="Path 3676"
-                  d="M19,3H5A2,2,0,0,0,3,5V19a2,2,0,0,0,2,2H19a2,2,0,0,0,2-2V5A2,2,0,0,0,19,3ZM10,17,5,12l1.41-1.41L10,14.17l7.59-7.59L19,8Z"
-                  fill="#1f7a54"
-                />
-              </svg>
-              Remember Me </label
-            ><br />
-          </div>
-          <div class="eight">
-            <button type="submit" class="btn-submit">
-              <a href="dashboard.html" class="unstyle-a">LOG IN</a>
-            </button>
-          </div>
+      <div class="form">
+        <div class="firstrow">
+          <img
+            src="./assets/icons/back.svg"
+            class="img-back"
+            alt="back-arrow"
+          />
+          <h1 class="form-header">Log in with Quantum</h1>
         </div>
-      </form>
-    </div>
 
+        <form action="" class="form-group">
+          <div class="secondrow">
+            <div>
+              <input
+                type="radio"
+                class="radio-btn btn1"
+                name="age"
+                value="30"
+              />
+
+              <label for="age1" class="radio-font"> District</label>
+              <input
+                type="radio"
+                class="radio-btn btn2"
+                name="age"
+                value="60"
+              />
+
+              <label for="age2" class="radio-font">Independent school</label>
+            </div>
+            <div class="thirdrow">
+              <label for="state" class="block-css state-css">State*</label>
+              <input list="us_states" id="state" class="datal" required />
+              <datalist id="us_states">
+                <option value="al" label="Alabama">Alabama</option>
+                <option value="ak" label="Alaska">Alaska</option>
+                <option value="az" label="Arizona">Arizona</option>
+                <option value="ar" label="Arkansas">Arkansas</option>
+                <option value="ca" label="California">California</option>
+                <option value="co" label="Colorado">Colorado</option>
+                <option value="ct" label="Connecticut">Connecticut</option>
+                <option value="de" label="Delaware">Delaware</option>
+                <option value="fl" label="Florida">Florida</option>
+                <option value="ga" label="Georgia">Georgia</option>
+                <option value="hi" label="Hawaii">Hawaii</option>
+                <option value="id" label="Idaho">Idaho</option>
+                <option value="il" label="Illinois">Illinois</option>
+                <option value="in" label="Indiana">Indiana</option>
+                <option value="ia" label="Iowa">Iowa</option>
+                <option value="ks" label="Kansas">Kansas</option>
+                <option value="ky" label="Kentucky">Kentucky</option>
+                <option value="la" label="Louisiana">Louisiana</option>
+                <option value="me" label="Maine">Maine</option>
+                <option value="md" label="Maryland">Maryland</option>
+                <option value="ma" label="Massachusetts">Massachusetts</option>
+                <option value="mi" label="Michigan">Michigan</option>
+                <option value="mn" label="Minnesota">Minnesota</option>
+                <option value="ms" label="Mississippi">Mississippi</option>
+                <option value="mo" label="Missouri">Missouri</option>
+                <option value="mt" label="Montana">Montana</option>
+                <option value="ne" label="Nebraska">Nebraska</option>
+                <option value="nv" label="Nevada">Nevada</option>
+                <option value="nh" label="New Hampshire">New Hampshire</option>
+                <option value="nj" label="New Jersey">New Jersey</option>
+                <option value="nm" label="New Mexico">New Mexico</option>
+                <option value="ny" label="New York">New York</option>
+                <option value="nc" label="North Carolina">
+                  North Carolina
+                </option>
+                <option value="nd" label="North Dakota">North Dakota</option>
+                <option value="oh" label="Ohio">Ohio</option>
+                <option value="ok" label="Oklahoma">Oklahoma</option>
+                <option value="or" label="Oregon">Oregon</option>
+                <option value="pa" label="Pennsylvania">Pennsylvania</option>
+                <option value="ri" label="Rhode Island">Rhode Island</option>
+                <option value="sc" label="South Carolina">
+                  South Carolina
+                </option>
+                <option value="ds" label="South Dakota">South Dakota</option>
+                <option value="tn" label="Tennessee">Tennessee</option>
+                <option value="tx" label="Texas">Texas</option>
+                <option value="ut" label="Utah">Utah</option>
+                <option value="vt" label="Vermont">Vermont</option>
+                <option value="va" label="Virginia">Virginia</option>
+                <option value="wa" label="Washington">Washington</option>
+                <option value="wv" label="West Virginia">West Virginia</option>
+                <option value="wi" label="Wisconsin">Wisconsin</option>
+                <option value="wy" label="Wyoming">Wyoming</option>
+              </datalist>
+            </div>
+            <div class="fourthrow">
+              <label for="browser" class="block-css district-css"
+                >District*</label
+              >
+              <input list="us_districts" id="browser" class="datal" required />
+              <datalist id="us_districts">
+                <option value="Edgesdfa"></option>
+                <option value="Firefoxasdf"></option>
+                <option value="Chromeasdf"></option>
+                <option value="Operaafsd"></option>
+                <option value="Safarasfdasdfi"></option>
+              </datalist>
+            </div>
+            <div class="fifthrow">
+              <input
+                type="text"
+                id="fname"
+                placeholder="Username/Email ID*"
+                class="username"
+              />
+              <label for="fname" class="label-fu">FORGOT USERNAME?</label>
+            </div>
+            <div class="sixthrow">
+              <input
+                type="password"
+                required
+                id="fname"
+                placeholder="Password*"
+                class="password"
+              />
+              <label for="fname" class="label-fp">FORGOT PASSWORD?</label><br />
+            </div>
+            <div class="seven">
+              <input
+                type="checkbox"
+                id="vehicle1"
+                required
+                value="Bike"
+                class="rememberPassword"
+              />
+
+              <label for="vehicle1" class="remP">
+                <svg
+                  id="checkbox-unchecked"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    id="Path_3677"
+                    data-name="Path 3677"
+                    d="M19,5V19H5V5H19m0-2H5A2.006,2.006,0,0,0,3,5V19a2.006,2.006,0,0,0,2,2H19a2.006,2.006,0,0,0,2-2V5A2.006,2.006,0,0,0,19,3Z"
+                    fill="#1f7a54"
+                  />
+                  <path
+                    id="Path_3678"
+                    data-name="Path 3678"
+                    d="M0,0H24V24H0Z"
+                    fill="none"
+                  />
+                </svg>
+                <svg
+                  id="checkbox-checked"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    id="Path_3675"
+                    data-name="Path 3675"
+                    d="M0,0H24V24H0Z"
+                    fill="none"
+                  />
+                  <path
+                    id="Path_3676"
+                    data-name="Path 3676"
+                    d="M19,3H5A2,2,0,0,0,3,5V19a2,2,0,0,0,2,2H19a2,2,0,0,0,2-2V5A2,2,0,0,0,19,3ZM10,17,5,12l1.41-1.41L10,14.17l7.59-7.59L19,8Z"
+                    fill="#1f7a54"
+                  />
+                </svg>
+                Remember Me </label
+              ><br />
+            </div>
+            <div class="eight">
+              <button type="submit" class="btn-submit">
+                <a href="dashboard.html" class="unstyle-a">LOG IN</a>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
     <footer class="foot">
       <a href="" class="inline-css abt">About</a>
       <a href="" class="inline-css con">Contact us</a>
