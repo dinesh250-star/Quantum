@@ -28,6 +28,7 @@ body {
   display: grid;
   grid-template-columns: 24px 1fr 24px;
   grid-template-rows: 24px 64px 24px 45px 16px auto;
+  min-height: calc(100% - (100px));
 }
 /* .navbar {
   grid-row: 1/2;
@@ -151,6 +152,7 @@ input {
   border: none;
   background-color: transparent;
 }
+
 .searchInput {
   border-bottom: 2px solid #e3e3e3;
   height: 20px;
