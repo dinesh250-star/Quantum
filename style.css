@@ -1,10 +1,10 @@
 @font-face {
   font-family: "QuicksandB";
-  src: url("../assets/fonts/Quicksand font 1/static/Quicksand-Bold.ttf");
+  src: url("./assets/fonts/Quicksand font 1/static/Quicksand-Bold.ttf");
 }
 @font-face {
   font-family: "QuicksandM";
-  src: url("../assets/fonts/Quicksand font 1/static/Quicksand-Medium.ttf");
+  src: url("./assets/fonts/Quicksand font 1/static/Quicksand-Medium.ttf");
 }
 html,
 body {
@@ -22,6 +22,7 @@ body {
   height: 56px;
   border-bottom: 4px solid #31b9e4;
 }
+
 .logo-navbar {
   position: absolute;
   top: 10.5px;
@@ -63,7 +64,11 @@ body {
 input {
   accent-color: green;
 }
-
+input {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
 .secondrow {
   display: inline-block;
   position: relative;
@@ -223,7 +228,7 @@ input[type="checkbox"]:checked + label #checkbox-unchecked {
   border: none;
 }
 ::-ms-reveal {
-  background-image: url("../assets/icons/preview.svg");
+  background-image: url("./assets/icons/preview.svg");
 }
 
 .inline-css {

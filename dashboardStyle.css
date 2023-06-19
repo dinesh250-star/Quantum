@@ -1,10 +1,10 @@
 @font-face {
   font-family: "QuicksandB";
-  src: url("../assets/fonts/Quicksand font 1/static/Quicksand-Bold.ttf");
+  src: url("./assets/fonts/Quicksand font 1/static/Quicksand-Bold.ttf");
 }
 @font-face {
   font-family: "QuicksandM";
-  src: url("../assets/fonts/Quicksand font 1/static/Quicksand-Medium.ttf");
+  src: url("./assets/fonts/Quicksand font 1/static/Quicksand-Medium.ttf");
 }
 html,
 body {
@@ -13,7 +13,17 @@ body {
   width: 100%;
   background-color: #eeeeee;
 }
-
+.navbar-icon-height-width {
+  height: 32px;
+  width: 32px;
+}
+.sort-icon-height {
+  height: 24px;
+  width: 12px;
+}
+.courses-and-classes-icon-height {
+  height: 25px;
+}
 .container {
   display: grid;
   grid-template-columns: 24px 1fr 24px;
@@ -27,7 +37,7 @@ body {
   background-size: 100% 100%;
 } */
 .header {
-  background-image: url("../assets/images/headerPatternImage.png");
+  background-image: url("./assets/images/headerPatternImage.png");
   background-repeat: no-repeat;
   height: 56px;
   background-size: cover;
@@ -137,7 +147,9 @@ body {
   color: #686868;
 }
 input {
+  outline: none;
   border: none;
+  background-color: transparent;
 }
 .searchInput {
   border-bottom: 2px solid #e3e3e3;
@@ -156,17 +168,20 @@ input {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-
+  align-items: flex-start;
   grid-row: 6/7;
   grid-column: 2/3;
 }
+.flex-item-end {
+  align-self: flex-start;
+}
 .card {
-  max-width: 600px;
-  min-width: 500px;
+  max-width: 550px;
+  min-width: 550px;
   border: 2px solid #ffffff;
   margin-bottom: 25px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 25px;
+  margin-right: 25px;
   height: 246px;
   background-color: white;
   padding-right: 24px;
@@ -242,6 +257,7 @@ input {
   padding-left: 9px;
   text-decoration: none;
 }
+
 .foot {
   text-align: center;
   margin-top: 70px;
@@ -272,6 +288,7 @@ p {
   font-size: 12px;
   color: #656565;
 }
+
 .bold {
   font-family: "QuicksandB";
   font-size: 12px;
@@ -358,6 +375,7 @@ img .cardI {
 .expired.disable {
   display: none;
 }
+
 @media (max-width: 910px) {
   /* Add your styles here */
   .menu {
