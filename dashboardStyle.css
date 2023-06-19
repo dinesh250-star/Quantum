@@ -172,7 +172,7 @@ input {
 .cardC {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: flex-start;
   grid-row: 6/7;
   grid-column: 2/3;
@@ -186,7 +186,7 @@ input {
   border: 2px solid #ffffff;
   margin-bottom: 25px;
   margin-left: 25px;
-  margin-right: 25px;
+  margin-right: auto;
   height: 246px;
   background-color: white;
   padding-right: 24px;
