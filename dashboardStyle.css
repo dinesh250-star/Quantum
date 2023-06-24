@@ -177,9 +177,7 @@ input {
   grid-row: 6/7;
   grid-column: 2/3;
 }
-.flex-item-end {
-  align-self: flex-start;
-}
+
 .card {
   max-width: 550px;
   min-width: 550px;
@@ -197,6 +195,9 @@ input {
 .profile {
   margin-right: 27px;
 }
+.cardI.expiredPadding {
+  padding-top: 8px;
+}
 .cardI {
   display: flex;
   padding-top: 24px;
@@ -206,8 +207,8 @@ input {
   padding-left: 24px; */
   border-bottom: 2px solid #e1e1e1;
 }
-.cardI.expire {
-  padding-top: 6px;
+.disable-icon {
+  opacity: 0.4;
 }
 
 .cardF {

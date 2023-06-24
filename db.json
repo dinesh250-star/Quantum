@@ -1,0 +1,121 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "title": "Acceleration",
+      "image": "imageMask.png",
+      "subject": "Physics",
+      "grade": "Grade 7+2",
+      "units": 4,
+      "lessons": 18,
+      "topics": 24,
+      "students": 50,
+      "courseDuration": "21-jan-2020 - 22-aug-2021",
+      "expired": false
+    },
+    {
+      "id": 2,
+      "title": "Displacement, Velocity and Speed",
+      "image": "imageMask-1.png",
+      "subject": "Physics 2",
+      "grade": "Grade 6+3",
+      "units": 2,
+      "lessons": 15,
+      "topics": 2,
+      "students": 0,
+      "courseDuration": "",
+      "expired": false
+    },
+    {
+      "id": 3,
+      "title": "Introduction to Biology: Micro organisms and how they affect the humans",
+      "image": "imageMask-3.png",
+      "subject": "Biology",
+      "grade": "Grade 4+1",
+      "units": 5,
+      "lessons": 16,
+      "topics": 22,
+      "students": 300,
+      "courseDuration": "14-Oct-2019 - 10-Nov-2021",
+      "expired": false
+    },
+    {
+      "id": 4,
+      "title": "Introduction to High School Mathematics",
+      "image": "imageMask-2.png",
+      "subject": "Mathematics",
+      "grade": "Grade 8+3",
+      "units": 0,
+      "lessons": 0,
+      "topics": 0,
+      "students": 44,
+      "courseDuration": "14-Oct-2019 - 20-Oct-2020",
+      "expired": true
+    },
+    {
+      "id": 5,
+      "title": "Introduction to College Chemistry",
+      "image": "imageMask.png",
+      "subject": "Chemistry 2",
+      "grade": "Grade 11+2",
+      "units": 5,
+      "lessons": 10,
+      "topics": 30,
+      "students": 144,
+      "courseDuration": "14-Oct-2019 - 20-Oct-2022",
+      "expired": false
+    },
+    {
+      "id": 6,
+      "title": "Introduction to High School Chemistry",
+      "image": "imageMask-1.png",
+      "subject": "Chemistry 1",
+      "grade": "Grade 5+3",
+      "units": 9,
+      "lessons": 23,
+      "topics": 57,
+      "students": 104,
+      "courseDuration": "14-Oct-2019 - 20-Oct-2020",
+      "expired": true
+    },
+    {
+      "id": 7,
+      "title": "Introduction to Thermodynamics",
+      "image": "imageMask-3.png",
+      "subject": "Thermodynamics",
+      "grade": "Grade 14+3",
+      "units": 45,
+      "lessons": 48,
+      "topics": 70,
+      "students": 50,
+      "courseDuration": "14-Oct-2017 - 20-Oct-2020",
+      "expired": false
+    },
+    {
+      "id": 8,
+      "title": "Current Electricity",
+      "image": "imageMask-2.png",
+      "subject": "Mathematics",
+      "grade": "Grade 4+3",
+      "units": 0,
+      "lessons": 0,
+      "topics": 0,
+      "students": 44,
+      "courseDuration": "14-Oct-2019 - 10-Nov-2021",
+      "expired": false
+    },
+    {
+      "id": 9,
+      "title": "Mechanics",
+      "image": "imageMask.png",
+      "subject": "Mechanics 1",
+      "grade": "Grade 8+3",
+      "units": 10,
+      "lessons": 20,
+      "topics": 40,
+      "students": 44,
+      "courseDuration": "14-Oct-2020 - 10-Nov-2023",
+      "expired": true
+    }
+  ]
+}
