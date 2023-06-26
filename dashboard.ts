@@ -1,5 +1,5 @@
 export {};
-let resultObject: {}[];
+
 const cardContainer = document.querySelector(".cardC") as HTMLDivElement;
 
 function doGetRequest() {
@@ -30,7 +30,7 @@ function doGetRequest() {
                   <img
                     src="./assets/icons/favourite.svg"
                     alt="favourite-icon"
-                    class="moveCI item "
+                    class="moveCI item fav"
                     id="favourite-icon-toggle-${item.id}"
                      onClick="favouriteHandler(event)"
                 
@@ -83,23 +83,23 @@ function doGetRequest() {
             </div>
                <div class="card2">
               <img src="./assets/icons/preview.svg" alt="preview-icon"  onClick="handler(event)"
-                 class="" id="preview-icon-toggle-${item.id}"    />
+                 class="preview" id="preview-icon-toggle-${item.id}"    />
               <img
                 src="./assets/icons/manage course.svg"
                 alt="manage-course-icon"
                 id="manage-course-icon-toggle-${item.id}"
                  onClick="handler(event)"
-                 class=""
+                 class="manage-course"
               />
               <img
                 src="./assets/icons/grade submissions.svg"
                 alt="grade-submission-icon"
                 id="grade-submission-icon-toggle-${item.id}"
                  onClick="handler(event)"
-                 class=""
+                 class="grade-submission"
               />
-              <img src="./assets/icons/reports.svg" alt="resports-icon"  onClick="handler(event)"
-                 class=""  id="reports-icon-toggle-${item.id}"/>
+              <img src="./assets/icons/reports.svg" alt="reports-icon"  onClick="handler(event)"
+                 class="report"  id="reports-icon-toggle-${item.id}"/>
             </div>
           </div>
          
@@ -129,3 +129,61 @@ const favouriteHandler = (event: MouseEvent) => {
     imgElement.src = "http://127.0.0.1:5500/assets/icons/favourite.svg";
   }
 };
+const hamburgerMenu = document.querySelector("#ham") as HTMLDivElement;
+const hamburgerMenuDropdown = document.querySelector(
+  ".hamburger-menu-dropdown"
+) as HTMLDivElement;
+hamburgerMenu.addEventListener("mouseover", function () {
+  console.log("hover");
+  hamburgerMenuDropdown.style.display = "inline-block";
+});
+hamburgerMenuDropdown.addEventListener("mouseover", function () {
+  console.log("hover");
+  hamburgerMenuDropdown.style.display = "inline-block";
+});
+hamburgerMenu.addEventListener("mouseout", function () {
+  hamburgerMenuDropdown.style.display = "none";
+});
+hamburgerMenuDropdown.addEventListener("mouseout", function () {
+  hamburgerMenuDropdown.style.display = "none";
+});
+
+const alertMenu = document.querySelector("#alert") as HTMLDivElement;
+const alertMenuDropdown = document.querySelector(
+  ".alert-menu-dropdown"
+) as HTMLDivElement;
+alertMenu.addEventListener("mouseover", function () {
+  console.log("hover");
+  alertMenuDropdown.style.display = "inline-block";
+});
+alertMenuDropdown.addEventListener("mouseover", function () {
+  console.log("hover");
+  alertMenuDropdown.style.display = "inline-block";
+});
+alertMenu.addEventListener("mouseout", function () {
+  alertMenuDropdown.style.display = "none";
+});
+alertMenuDropdown.addEventListener("mouseout", function () {
+  alertMenuDropdown.style.display = "none";
+});
+
+const announcementMenu = document.querySelector(
+  "#announcement"
+) as HTMLDivElement;
+const announcementMenuDropdown = document.querySelector(
+  ".announcement-menu-dropdown"
+) as HTMLDivElement;
+announcementMenu.addEventListener("mouseover", function () {
+  console.log("hover");
+  announcementMenuDropdown.style.display = "inline-block";
+});
+announcementMenuDropdown.addEventListener("mouseover", function () {
+  console.log("hover");
+  announcementMenuDropdown.style.display = "inline-block";
+});
+announcementMenu.addEventListener("mouseout", function () {
+  announcementMenuDropdown.style.display = "none";
+});
+announcementMenuDropdown.addEventListener("mouseout", function () {
+  announcementMenuDropdown.style.display = "none";
+});
