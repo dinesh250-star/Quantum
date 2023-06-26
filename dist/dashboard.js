@@ -167,12 +167,17 @@ announcementMenuDropdown.addEventListener("mouseout", function () {
     announcementMenuDropdown.style.display = "none";
 });
 const contentArrow = document.querySelector(".arrow-down");
+const hamburgerContents = document.querySelector(".ham-contents");
+const content1 = document.querySelector(".content-1");
 const courseCatalog = document.getElementById("courseCatalog");
 contentArrow.addEventListener("click", function (event) {
     courseCatalog.classList.toggle("hide-content");
     contentArrow.classList.toggle("invert");
+    hamburgerContents.classList.toggle("activep");
+    content1.classList.toggle("activep");
 });
 const contentArrow1 = document.querySelector(".arrow-down-1");
+const hamburgerUsers = document.querySelector(".ham-users");
 const users = document.querySelector(".users");
 const users1 = document.querySelector(".users1");
 const users2 = document.querySelector(".users2");
@@ -183,7 +188,13 @@ contentArrow1.addEventListener("click", function (event) {
     users2.classList.toggle("hide-content");
     users3.classList.toggle("hide-content");
     contentArrow1.classList.toggle("invert");
+    hamburgerUsers.classList.toggle("activep");
+    users.classList.toggle("activep");
+    users1.classList.toggle("activep");
+    users2.classList.toggle("activep");
+    users3.classList.toggle("activep");
 });
+const hamburgerReports = document.querySelector(".ham-reports");
 const contentArrow2 = document.querySelector(".arrow-down-2");
 const reports = document.querySelector(".reports");
 const reports1 = document.querySelector(".reports1");
@@ -192,13 +203,21 @@ contentArrow2.addEventListener("click", function (event) {
     reports.classList.toggle("hide-content");
     reports1.classList.toggle("hide-content");
     reports2.classList.toggle("hide-content");
+    reports.classList.toggle("activep");
+    reports1.classList.toggle("activep");
+    reports2.classList.toggle("activep");
+    hamburgerReports.classList.toggle("activep");
     contentArrow2.classList.toggle("invert");
 });
+const hamburgerAdmin = document.querySelector(".ham-admin");
 const contentArrow3 = document.querySelector(".arrow-down-3");
 const dummy = document.querySelector(".dummy");
 const dummy1 = document.querySelector(".dummy1");
 contentArrow3.addEventListener("click", function (event) {
     dummy.classList.toggle("hide-content");
     dummy1.classList.toggle("hide-content");
+    dummy.classList.toggle("activep");
+    dummy1.classList.toggle("activep");
+    hamburgerAdmin.classList.toggle("activep");
     contentArrow3.classList.toggle("invert");
 });

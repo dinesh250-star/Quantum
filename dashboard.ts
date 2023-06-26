@@ -189,7 +189,10 @@ announcementMenuDropdown.addEventListener("mouseout", function () {
 });
 
 const contentArrow = document.querySelector(".arrow-down") as HTMLImageElement;
-
+const hamburgerContents = document.querySelector(
+  ".ham-contents"
+) as HTMLDivElement;
+const content1 = document.querySelector(".content-1") as HTMLDivElement;
 const courseCatalog = document.getElementById(
   "courseCatalog"
 ) as HTMLDivElement;
@@ -197,11 +200,14 @@ contentArrow.addEventListener("click", function (event: MouseEvent) {
   courseCatalog.classList.toggle("hide-content");
 
   contentArrow.classList.toggle("invert");
+  hamburgerContents.classList.toggle("activep");
+  content1.classList.toggle("activep");
 });
 
 const contentArrow1 = document.querySelector(
   ".arrow-down-1"
 ) as HTMLImageElement;
+const hamburgerUsers = document.querySelector(".ham-users") as HTMLDivElement;
 
 const users = document.querySelector(".users") as HTMLDivElement;
 const users1 = document.querySelector(".users1") as HTMLDivElement;
@@ -213,7 +219,15 @@ contentArrow1.addEventListener("click", function (event: MouseEvent) {
   users2.classList.toggle("hide-content");
   users3.classList.toggle("hide-content");
   contentArrow1.classList.toggle("invert");
+  hamburgerUsers.classList.toggle("activep");
+  users.classList.toggle("activep");
+  users1.classList.toggle("activep");
+  users2.classList.toggle("activep");
+  users3.classList.toggle("activep");
 });
+const hamburgerReports = document.querySelector(
+  ".ham-reports"
+) as HTMLDivElement;
 const contentArrow2 = document.querySelector(
   ".arrow-down-2"
 ) as HTMLImageElement;
@@ -225,9 +239,13 @@ contentArrow2.addEventListener("click", function (event: MouseEvent) {
   reports.classList.toggle("hide-content");
   reports1.classList.toggle("hide-content");
   reports2.classList.toggle("hide-content");
-
+  reports.classList.toggle("activep");
+  reports1.classList.toggle("activep");
+  reports2.classList.toggle("activep");
+  hamburgerReports.classList.toggle("activep");
   contentArrow2.classList.toggle("invert");
 });
+const hamburgerAdmin = document.querySelector(".ham-admin") as HTMLDivElement;
 const contentArrow3 = document.querySelector(
   ".arrow-down-3"
 ) as HTMLImageElement;
@@ -237,6 +255,8 @@ const dummy1 = document.querySelector(".dummy1") as HTMLDivElement;
 contentArrow3.addEventListener("click", function (event: MouseEvent) {
   dummy.classList.toggle("hide-content");
   dummy1.classList.toggle("hide-content");
-
+  dummy.classList.toggle("activep");
+  dummy1.classList.toggle("activep");
+  hamburgerAdmin.classList.toggle("activep");
   contentArrow3.classList.toggle("invert");
 });

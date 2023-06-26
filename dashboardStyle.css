@@ -324,6 +324,16 @@ img .cardI {
 }
 ul {
   list-style-type: none;
+  padding-left: 0;
+}
+.p-10 {
+  padding: 10px;
+}
+.activep {
+  background-color: #f3f3f3;
+}
+.subitem {
+  text-align: center;
 }
 #ham {
   display: none;
@@ -334,10 +344,9 @@ ul {
   top: 70%;
   left: -150%;
   background-color: #f9f9f9;
-  min-width: 190px;
+  min-width: 200px;
   min-height: auto;
   max-width: 280px;
-  padding: 10px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
@@ -420,7 +429,7 @@ ul {
   font-family: "QuicksandM";
   font-size: 14px;
   letter-spacing: 0px;
-  text-align: left;
+
   padding-bottom: 15px;
 }
 .list-items-alert {
