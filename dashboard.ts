@@ -187,3 +187,56 @@ announcementMenu.addEventListener("mouseout", function () {
 announcementMenuDropdown.addEventListener("mouseout", function () {
   announcementMenuDropdown.style.display = "none";
 });
+
+const contentArrow = document.querySelector(".arrow-down") as HTMLImageElement;
+
+const courseCatalog = document.getElementById(
+  "courseCatalog"
+) as HTMLDivElement;
+contentArrow.addEventListener("click", function (event: MouseEvent) {
+  courseCatalog.classList.toggle("hide-content");
+
+  contentArrow.classList.toggle("invert");
+});
+
+const contentArrow1 = document.querySelector(
+  ".arrow-down-1"
+) as HTMLImageElement;
+
+const users = document.querySelector(".users") as HTMLDivElement;
+const users1 = document.querySelector(".users1") as HTMLDivElement;
+const users2 = document.querySelector(".users2") as HTMLDivElement;
+const users3 = document.querySelector(".users3") as HTMLDivElement;
+contentArrow1.addEventListener("click", function (event: MouseEvent) {
+  users.classList.toggle("hide-content");
+  users1.classList.toggle("hide-content");
+  users2.classList.toggle("hide-content");
+  users3.classList.toggle("hide-content");
+  contentArrow1.classList.toggle("invert");
+});
+const contentArrow2 = document.querySelector(
+  ".arrow-down-2"
+) as HTMLImageElement;
+const reports = document.querySelector(".reports") as HTMLDivElement;
+const reports1 = document.querySelector(".reports1") as HTMLDivElement;
+const reports2 = document.querySelector(".reports2") as HTMLDivElement;
+
+contentArrow2.addEventListener("click", function (event: MouseEvent) {
+  reports.classList.toggle("hide-content");
+  reports1.classList.toggle("hide-content");
+  reports2.classList.toggle("hide-content");
+
+  contentArrow2.classList.toggle("invert");
+});
+const contentArrow3 = document.querySelector(
+  ".arrow-down-3"
+) as HTMLImageElement;
+const dummy = document.querySelector(".dummy") as HTMLDivElement;
+const dummy1 = document.querySelector(".dummy1") as HTMLDivElement;
+
+contentArrow3.addEventListener("click", function (event: MouseEvent) {
+  dummy.classList.toggle("hide-content");
+  dummy1.classList.toggle("hide-content");
+
+  contentArrow3.classList.toggle("invert");
+});

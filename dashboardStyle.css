@@ -209,6 +209,9 @@ input {
 .profile {
   margin-right: 27px;
 }
+.profile-container {
+  position: relative;
+}
 .cardI.expiredPadding {
   padding-top: 8px;
 }
@@ -328,14 +331,24 @@ ul {
 .hamburger-menu-dropdown {
   display: none;
   position: absolute;
-  top: 25%;
-  left: 90%;
+  top: 70%;
+  left: -150%;
   background-color: #f9f9f9;
-  min-width: 160px;
+  min-width: 190px;
+  min-height: auto;
+  max-width: 280px;
   padding: 10px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  transition: height 5s ease;
+}
+.hamburger-contents {
+  display: flex;
+}
+.hide-content {
+  display: none;
+}
+.move-left-auto {
+  margin-left: auto;
 }
 .announcement-checkmark {
   margin-left: auto;
@@ -368,7 +381,22 @@ ul {
   max-height: 584px;
   padding: 0px;
 }
+.alert-menu-dropdown {
+  display: none;
+  position: absolute;
+  top: 90%;
+  right: -10%;
+  background-color: #f9f9f9;
 
+  padding: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  min-width: 315px;
+  max-width: 315px;
+  min-height: 584px;
+  max-height: 584px;
+  padding: 0px;
+}
 .inner-container::-webkit-scrollbar {
   width: 4px;
   height: 298px;
@@ -376,10 +404,36 @@ ul {
 .inner-container::-webkit-scrollbar-thumb {
   background-color: #a5a5a5;
 }
-
+.inner-container-alert::-webkit-scrollbar {
+  width: 4px;
+  height: 298px;
+}
+.inner-container-alert::-webkit-scrollbar-thumb {
+  background-color: #a5a5a5;
+}
 .list-items-announcement {
   border-bottom: 1px solid #2222221f;
   padding: 16px;
+}
+.list-items-hamburger {
+  color: #1f7a54;
+  font-family: "QuicksandM";
+  font-size: 14px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-bottom: 15px;
+}
+.list-items-alert {
+  border-bottom: 1px solid #2222221f;
+  padding-left: 16px;
+  padding-top: 16px;
+  padding-right: 16px;
+}
+.invert {
+  transform: rotate(180deg);
+}
+.bg-active {
+  background-color: #f3f3f3;
 }
 .announcement-name {
   padding-bottom: 8px;
@@ -405,9 +459,42 @@ ul {
   font-family: "QuicksandM";
   font-size: 14px;
 }
+.alert-content {
+  padding-bottom: 8px;
+  letter-spacing: 0px;
+  display: flex;
+}
+.alert-content-1 {
+  color: #222222;
+  font-family: "QuicksandM";
+  font-size: 14px;
+}
+.alert-checkmark {
+  margin-left: auto;
+}
 .announcement-information {
   letter-spacing: 0px;
   display: flex;
+}
+.alert-information-1 {
+  color: #6e6e6e;
+  font-family: "QuicksandM";
+  font-size: 12px;
+}
+.alert-information-2 {
+  color: #222222;
+  font-family: "QuicksandM";
+  font-size: 12px;
+}
+.alert-date-time {
+  display: flex;
+  justify-content: flex-end;
+}
+.alert-date-time-1 {
+  color: #6e6e6e;
+  font-family: "QuicksandM";
+  font-size: 12px;
+  padding-bottom: 16px;
 }
 .inner-container {
   overflow-y: auto;
@@ -418,6 +505,26 @@ ul {
   background-color: #ffffff;
   display: flex;
   justify-content: space-evenly;
+}
+.inner-container-alert {
+  overflow-y: auto;
+  max-height: 534px;
+}
+.outer-container-alert {
+  min-height: 48px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-evenly;
+}
+.alert-show {
+  color: #1f7a54;
+  font-family: "QuicksandM";
+  font-size: 14px;
+  border: none;
+  background-color: #ffffff;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  cursor: pointer;
 }
 .announcement-show {
   color: #1f7a54;
@@ -459,17 +566,8 @@ ul {
   font-size: 12px;
   margin-left: auto;
 }
-.alert-menu-dropdown {
-  display: none;
-  position: absolute;
-  top: 55%;
-  left: 10%;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  padding: 10px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  transition: height 5s ease;
+.fa-chevron-down {
+  height: 15px;
 }
 .icon-opacity {
   opacity: 0.4;
@@ -496,9 +594,9 @@ ul {
   color: black;
   text-align: center;
   line-height: 21px;
-  position: relative;
-  top: -38px;
-  right: 37px;
+  position: absolute;
+  top: 15px;
+  left: 50px;
 }
 .cardIE {
   display: flex;
@@ -531,6 +629,9 @@ ul {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.hamburger-container {
+  position: relative;
+}
 .expired {
   height: 12px;
   width: 40px;
@@ -556,6 +657,9 @@ ul {
     padding: 19px 32px;
   }
   .move {
+    margin-left: auto;
+  }
+  .alert-container {
     margin-left: auto;
   }
   .profile {

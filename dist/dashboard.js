@@ -166,3 +166,39 @@ announcementMenu.addEventListener("mouseout", function () {
 announcementMenuDropdown.addEventListener("mouseout", function () {
     announcementMenuDropdown.style.display = "none";
 });
+const contentArrow = document.querySelector(".arrow-down");
+const courseCatalog = document.getElementById("courseCatalog");
+contentArrow.addEventListener("click", function (event) {
+    courseCatalog.classList.toggle("hide-content");
+    contentArrow.classList.toggle("invert");
+});
+const contentArrow1 = document.querySelector(".arrow-down-1");
+const users = document.querySelector(".users");
+const users1 = document.querySelector(".users1");
+const users2 = document.querySelector(".users2");
+const users3 = document.querySelector(".users3");
+contentArrow1.addEventListener("click", function (event) {
+    users.classList.toggle("hide-content");
+    users1.classList.toggle("hide-content");
+    users2.classList.toggle("hide-content");
+    users3.classList.toggle("hide-content");
+    contentArrow1.classList.toggle("invert");
+});
+const contentArrow2 = document.querySelector(".arrow-down-2");
+const reports = document.querySelector(".reports");
+const reports1 = document.querySelector(".reports1");
+const reports2 = document.querySelector(".reports2");
+contentArrow2.addEventListener("click", function (event) {
+    reports.classList.toggle("hide-content");
+    reports1.classList.toggle("hide-content");
+    reports2.classList.toggle("hide-content");
+    contentArrow2.classList.toggle("invert");
+});
+const contentArrow3 = document.querySelector(".arrow-down-3");
+const dummy = document.querySelector(".dummy");
+const dummy1 = document.querySelector(".dummy1");
+contentArrow3.addEventListener("click", function (event) {
+    dummy.classList.toggle("hide-content");
+    dummy1.classList.toggle("hide-content");
+    contentArrow3.classList.toggle("invert");
+});
