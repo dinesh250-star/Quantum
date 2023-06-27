@@ -11,10 +11,7 @@ function doGetRequest() {
     })
         .then((data) => {
         console.log(data);
-        const markup = `
-       
-        ${data
-            .map((item) => {
+        const markup = data.map((item) => {
             return `
           <div class="card" >
             <div class="${item.expired ? "expired" : "expired disable"} ">EXPIRED</div>
@@ -91,13 +88,10 @@ function doGetRequest() {
               <img src="./assets/icons/reports.svg" alt="reports-icon"  onClick="handler(event)"
                  class="report"  id="reports-icon-toggle-${item.id}"/>
             </div>
-          </div>
-         
-        `;
-        })
-            .join("")} 
-       `;
-        cardContainer.innerHTML = markup;
+          </div>`;
+        });
+        const combinedMarkup = markup.join("");
+        cardContainer.innerHTML = combinedMarkup;
     })
         .catch((error) => {
         console.error("Error:", error);
