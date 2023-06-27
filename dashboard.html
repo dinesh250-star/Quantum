@@ -472,8 +472,9 @@
             src="./assets/icons/hamburger-menu.svg"
             alt="hamburger-icon"
           />
+          <!-- p-10 is padding -10px -->
           <ul class="hamburger-menu-dropdown">
-            <li class="list-items-hamburger p-10">DASHBOARD</li>
+            <li class="list-items-hamburger p-10 move-left">DASHBOARD</li>
             <div class="hamburger-contents ham-contents">
               <li class="list-items-hamburger content p-10">CONTENT</li>
               <i
@@ -484,7 +485,7 @@
 
             <ul>
               <li
-                class="list-items-hamburger hide-content p-10 subitem content-1"
+                class="list-items-hamburger hide-content p-10 content-1"
                 id="courseCatalog"
               >
                 COURSE CATALOG
@@ -498,16 +499,16 @@
               ></i>
             </div>
             <ul>
-              <li class="list-items-hamburger hide-content users p-10 subitem">
+              <li class="list-items-hamburger hide-content users p-10">
                 COURSE CATALOG2
               </li>
-              <li class="list-items-hamburger hide-content users1 p-10 subitem">
+              <li class="list-items-hamburger hide-content users1 p-10">
                 DUMMY
               </li>
-              <li class="list-items-hamburger hide-content users2 p-10 subitem">
+              <li class="list-items-hamburger hide-content users2 p-10">
                 COURSE CATALOG
               </li>
-              <li class="list-items-hamburger hide-content users3 p-10 subitem">
+              <li class="list-items-hamburger hide-content users3 p-10">
                 DUMMY
               </li>
             </ul>
@@ -519,19 +520,13 @@
               ></i>
             </div>
             <ul>
-              <li
-                class="list-items-hamburger hide-content reports p-10 subitem"
-              >
+              <li class="list-items-hamburger hide-content reports p-10">
                 COURSE CATALOG
               </li>
-              <li
-                class="list-items-hamburger hide-content reports1 p-10 subitem"
-              >
+              <li class="list-items-hamburger hide-content reports1 p-10">
                 COURSE CATALOG
               </li>
-              <li
-                class="list-items-hamburger hide-content reports2 p-10 subitem"
-              >
+              <li class="list-items-hamburger hide-content reports2 p-10">
                 DUMMY
               </li>
             </ul>
@@ -543,11 +538,11 @@
               ></i>
             </div>
             <ul>
-              <li class="list-items-hamburger hide-content dummy p-10 subitem">
+              <li class="list-items-hamburger hide-content dummy p-10">
                 DUMMY
               </li>
 
-              <li class="list-items-hamburger hide-content dummy1 p-10 subitem">
+              <li class="list-items-hamburger hide-content dummy1 p-10">
                 DUMMY
               </li>
             </ul>
@@ -555,16 +550,6 @@
         </div>
       </header>
 
-      <!-- <ul class="alert-menu-dropdown">
-        <li class="list-items-hamburger">asfd</li>
-        <li class="list-items-hamburger">asdfasf</li>
-        <li class="list-items-hamburger">asfdaffds</li>
-      </ul> -->
-      <!-- <ul class="announcement-menu-dropdown">
-        <li class="list-items-hamburger">asfd</li>
-        <li class="list-items-hamburger">asdfasf</li>
-        <li class="list-items-hamburger">asfdaffds</li>
-      </ul> -->
       <div class="container">
         <div class="flexC">
           <div class="courses activeC">
@@ -605,237 +590,7 @@
             <img src="./assets/icons/sort.svg" alt="sort-icon" />
           </div>
         </div>
-        <div class="cardC">
-          <!-- <div class="card">
-            <div class="expired disable">EXPIRED</div>
-            <div class="cardI">
-              <img src="./assets/images/imageMask.png" alt="topic-image" />
-              <div class="cardF">
-                <div class="adjustStar">
-                  <span class="titleFont item restrict">Acceleration</span>
-                  <img
-                    src="./assets/icons/favourite.svg"
-                    alt="favourite-icon"
-                    class="moveCI item"
-                  />
-                </div>
-                <div class="subjectFont">
-                  <span class="moveC">Physics</span><span class="moveC">|</span
-                  ><span>Grade 7+2</span>
-                </div>
-                <div>
-                  <span class="subjectFont1">4 </span
-                  ><span class="subjectFont moveC">units</span
-                  ><span class="subjectFont1">18</span>
-                  <span class="subjectFont moveC">lessons</span
-                  ><span class="subjectFont1">24</span
-                  ><span class="subjectFont"> topics</span>
-                </div>
-                <input
-                  list="us_districts"
-                  id="browser"
-                  class="datal searchInputC"
-                />
-                <datalist id="us_districts">
-                  <option value="Edgesdfa"></option>
-                  <option value="Firefoxasdf"></option>
-                  <option value="Chromeasdf"></option>
-                  <option value="Operaafsd"></option>
-                  <option value="Safarasfdasdfi"></option>
-                </datalist>
-                <div>
-                  <span class="subjectFont moveC">50 students</span
-                  ><span class="moveC">|</span
-                  ><span class="subjectFont">21-jan-2020 - 22-aug-2021</span>
-                </div>
-              </div>
-            </div>
-            <div class="card2">
-              <img src="./assets/icons/preview.svg" alt="preview-icon" />
-              <img
-                src="./assets/icons/manage course.svg"
-                alt="manage-course-icon"
-              />
-              <img
-                src="./assets/icons/grade submissions.svg"
-                alt="grade-submission-icon"
-              />
-              <img src="./assets/icons/reports.svg" alt="resports-icon" />
-            </div>
-          </div>
-          <div class="card">
-            <div class="expired disable">EXPIRED</div>
-            <div class="cardI">
-              <img src="./assets/images/imageMask-1.png" alt="topic-image" />
-              <div class="cardF">
-                <div class="adjustStar">
-                  <span class="titleFont item restrict"
-                    >Displacement, Velocity and Speed</span
-                  >
-                  <img
-                    src="./assets/icons/favourite.svg"
-                    alt="favourite-icon"
-                    class="moveCI item"
-                  />
-                </div>
-                <div class="subjectFont">
-                  <span class="moveC">Physics 2</span
-                  ><span class="moveC">|</span><span>Grade 6+3</span>
-                </div>
-
-                <div>
-                  <span class="subjectFont1">2</span>
-                  <span class="subjectFont moveC">units</span
-                  ><span class="subjectFont1">15</span>
-                  <span class="subjectFont moveC">lessons</span
-                  ><span class="subjectFont1">2</span
-                  ><span class="subjectFont"> topics</span>
-                </div>
-                <input
-                  list="us_districts"
-                  id="browser"
-                  class="datal searchInputC"
-                />
-                <datalist id="us_districts">
-                  <option value="Edgesdfa"></option>
-                  <option value="Firefoxasdf"></option>
-                  <option value="Chromeasdf"></option>
-                  <option value="Operaafsd"></option>
-                  <option value="Safarasfdasdfi"></option>
-                </datalist>
-                <div>
-                  <span class="subjectFont moveC">50 students</span
-                  ><span class="moveC">|</span
-                  ><span class="subjectFont">21-jan-2020 - 22-aug-2021</span>
-                </div>
-              </div>
-            </div>
-            <div class="card2">
-              <img src="./assets/icons/preview.svg" alt="preview-icon" />
-              <img
-                src="./assets/icons/manage course.svg"
-                class="icon-opacity"
-                alt="manage-icon"
-              />
-              <img
-                src="./assets/icons/grade submissions.svg"
-                class="icon-opacity"
-                alt="submission-icon"
-              />
-              <img src="./assets/icons/reports.svg" alt="report-icon" />
-            </div>
-          </div>
-          <div class="card">
-            <div class="expired disable">EXPIRED</div>
-            <div class="cardI">
-              <img src="./assets/images/imageMask-3.png" alt="topic-image" />
-              <div class="cardF">
-                <div class="adjustStar">
-                  <span class="titleFont item restrict"
-                    >Introduction to Biology: Micro organisms and how they
-                    affect the humans</span
-                  >
-                  <img
-                    src="./assets/icons/favourite.svg"
-                    alt="favourite-icon"
-                    class="moveCI item"
-                  />
-                </div>
-                <div class="subjectFont">
-                  <span class="moveC">Biology</span><span class="moveC">|</span
-                  ><span>Grade 4+1</span>
-                </div>
-                <div>
-                  <span class="subjectFont1">5 </span
-                  ><span class="subjectFont moveC">units</span
-                  ><span class="subjectFont1">16</span>
-                  <span class="subjectFont moveC">lessons</span
-                  ><span class="subjectFont1">22</span
-                  ><span class="subjectFont"> topics</span>
-                </div>
-                <input
-                  list="us_districts"
-                  id="browser"
-                  class="datal searchInputC"
-                />
-                <datalist id="us_districts">
-                  <option value="Edgesdfa"></option>
-                  <option value="Firefoxasdf"></option>
-                  <option value="Chromeasdf"></option>
-                  <option value="Operaafsd"></option>
-                  <option value="Safarasfdasdfi"></option>
-                </datalist>
-                <div>
-                  <span class="subjectFont moveC">300 Students</span>
-                </div>
-              </div>
-            </div>
-            <div class="card2">
-              <img src="./assets/icons/preview.svg" alt="preview-icon" />
-              <img
-                src="./assets/icons/manage course.svg"
-                class="icon-opacity"
-                alt="manage-icon"
-              />
-              <img
-                src="./assets/icons/grade submissions.svg"
-                class="icon-opacity"
-                alt="submission-icon"
-              />
-              <img src="./assets/icons/reports.svg" alt="report-icon" />
-            </div>
-          </div>
-          <div class="card">
-            <div class="expired">EXPIRED</div>
-            <div class="cardI expire">
-              <img src="./assets/images/imageMask-2.png" alt="topic-image" />
-
-              <div class="cardF">
-                <div class="adjustStar">
-                  <span class="titleFont item restrict"
-                    >Introduction to High School Mathematics</span
-                  >
-                  <img
-                    src="./assets/icons/favourite2.svg"
-                    alt="favourite-icon"
-                    class="moveCI item"
-                  />
-                </div>
-                <div class="subjectFont">
-                  <span class="moveC">Mathematics</span
-                  ><span class="moveC">|</span><span>Grade 8+3</span>
-                </div>
-
-                <input
-                  list="us_districts"
-                  id="browser"
-                  class="datal searchInputC"
-                />
-                <datalist id="us_districts">
-                  <option value="Edgesdfa"></option>
-                  <option value="Firefoxasdf"></option>
-                  <option value="Chromeasdf"></option>
-                  <option value="Operaafsd"></option>
-                  <option value="Safarasfdasdfi"></option>
-                </datalist>
-                <div>
-                  <span class="subjectFont moveC">44 Students</span
-                  ><span class="moveC">|</span
-                  ><span class="subjectFont">14-Oct-2019 - 20-Oct-2020</span>
-                </div>
-              </div>
-            </div>
-            <div class="card2">
-              <img src="./assets/icons/preview.svg" alt="preview-icon" />
-              <img src="./assets/icons/manage course.svg" alt="manage-icon" />
-              <img
-                src="./assets/icons/grade submissions.svg"
-                alt="submission-icon"
-              />
-              <img src="./assets/icons/reports.svg" alt="reports-icon" />
-            </div>
-          </div> -->
-        </div>
+        <div class="cardC"></div>
       </div>
     </div>
     <footer class="foot">
