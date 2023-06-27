@@ -120,56 +120,45 @@ const favouriteHandler = (event) => {
 };
 const contentArrow = document.querySelector(".arrow-down");
 const hamburgerContents = document.querySelector(".ham-contents");
-const content1 = document.querySelector(".content-1");
-const courseCatalog = document.getElementById("courseCatalog");
+const content = document.querySelectorAll(".content-1");
 contentArrow.addEventListener("click", function (event) {
-    courseCatalog.classList.toggle("hide-content");
+    content.forEach((element, index) => {
+        content[index].classList.toggle("hide-content");
+        content[index].classList.toggle("activep");
+    });
     contentArrow.classList.toggle("invert");
     hamburgerContents.classList.toggle("activep");
-    content1.classList.toggle("activep");
 });
 const contentArrow1 = document.querySelector(".arrow-down-1");
 const hamburgerUsers = document.querySelector(".ham-users");
-const users = document.querySelector(".users");
-const users1 = document.querySelector(".users1");
-const users2 = document.querySelector(".users2");
-const users3 = document.querySelector(".users3");
+const users = document.querySelectorAll(".users");
 contentArrow1.addEventListener("click", function (event) {
-    users.classList.toggle("hide-content");
-    users1.classList.toggle("hide-content");
-    users2.classList.toggle("hide-content");
-    users3.classList.toggle("hide-content");
+    users.forEach((element, index) => {
+        users[index].classList.toggle("hide-content");
+        users[index].classList.toggle("activep");
+    });
     contentArrow1.classList.toggle("invert");
     hamburgerUsers.classList.toggle("activep");
-    users.classList.toggle("activep");
-    users1.classList.toggle("activep");
-    users2.classList.toggle("activep");
-    users3.classList.toggle("activep");
 });
 const hamburgerReports = document.querySelector(".ham-reports");
 const contentArrow2 = document.querySelector(".arrow-down-2");
-const reports = document.querySelector(".reports");
-const reports1 = document.querySelector(".reports1");
-const reports2 = document.querySelector(".reports2");
+const reports = document.querySelectorAll(".reports");
 contentArrow2.addEventListener("click", function (event) {
-    reports.classList.toggle("hide-content");
-    reports1.classList.toggle("hide-content");
-    reports2.classList.toggle("hide-content");
-    reports.classList.toggle("activep");
-    reports1.classList.toggle("activep");
-    reports2.classList.toggle("activep");
+    reports.forEach((element, index) => {
+        reports[index].classList.toggle("hide-content");
+        reports[index].classList.toggle("activep");
+    });
     hamburgerReports.classList.toggle("activep");
     contentArrow2.classList.toggle("invert");
 });
 const hamburgerAdmin = document.querySelector(".ham-admin");
 const contentArrow3 = document.querySelector(".arrow-down-3");
-const dummy = document.querySelector(".dummy");
-const dummy1 = document.querySelector(".dummy1");
+const dummy = document.querySelectorAll(".dummy");
 contentArrow3.addEventListener("click", function (event) {
-    dummy.classList.toggle("hide-content");
-    dummy1.classList.toggle("hide-content");
-    dummy.classList.toggle("activep");
-    dummy1.classList.toggle("activep");
+    dummy.forEach((element, index) => {
+        dummy[index].classList.toggle("hide-content");
+        dummy[index].classList.toggle("activep");
+    });
     hamburgerAdmin.classList.toggle("activep");
     contentArrow3.classList.toggle("invert");
 });

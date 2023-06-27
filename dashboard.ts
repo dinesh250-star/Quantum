@@ -1,7 +1,19 @@
 export {};
 
 const cardContainer = document.querySelector(".cardC") as HTMLDivElement;
-
+interface cardData {
+  id: number;
+  title: string;
+  image: string;
+  subject: string;
+  grade: string;
+  units: number;
+  lessons: number;
+  topics: number;
+  students: number;
+  courseDuration: string;
+  expired: boolean;
+}
 function doGetRequest() {
   fetch("http://localhost:3031/courses")
     .then((response) => {
@@ -10,7 +22,7 @@ function doGetRequest() {
       }
       return response.json();
     })
-    .then((data) => {
+    .then((data: cardData[]) => {
       console.log(data);
 
       const markup = `
@@ -131,75 +143,72 @@ const favouriteHandler = (event: MouseEvent) => {
   }
 };
 //for hamburger menu
+
+//for content dropdown
 const contentArrow = document.querySelector(".arrow-down") as HTMLImageElement;
 const hamburgerContents = document.querySelector(
   ".ham-contents"
 ) as HTMLDivElement;
-const content1 = document.querySelector(".content-1") as HTMLDivElement;
-const courseCatalog = document.getElementById(
-  "courseCatalog"
-) as HTMLDivElement;
+const content: NodeListOf<Element> = document.querySelectorAll(".content-1");
+
 contentArrow.addEventListener("click", function (event: MouseEvent) {
-  courseCatalog.classList.toggle("hide-content");
+  content.forEach((element: Element, index: number) => {
+    content[index].classList.toggle("hide-content");
+    content[index].classList.toggle("activep");
+  });
 
   contentArrow.classList.toggle("invert");
   hamburgerContents.classList.toggle("activep");
-  content1.classList.toggle("activep");
 });
 
+//for users dropdown
 const contentArrow1 = document.querySelector(
   ".arrow-down-1"
 ) as HTMLImageElement;
 const hamburgerUsers = document.querySelector(".ham-users") as HTMLDivElement;
 
-const users = document.querySelector(".users") as HTMLDivElement;
-const users1 = document.querySelector(".users1") as HTMLDivElement;
-const users2 = document.querySelector(".users2") as HTMLDivElement;
-const users3 = document.querySelector(".users3") as HTMLDivElement;
+const users: NodeListOf<Element> = document.querySelectorAll(".users");
+
 contentArrow1.addEventListener("click", function (event: MouseEvent) {
-  users.classList.toggle("hide-content");
-  users1.classList.toggle("hide-content");
-  users2.classList.toggle("hide-content");
-  users3.classList.toggle("hide-content");
+  users.forEach((element: Element, index: number) => {
+    users[index].classList.toggle("hide-content");
+    users[index].classList.toggle("activep");
+  });
+
   contentArrow1.classList.toggle("invert");
   hamburgerUsers.classList.toggle("activep");
-  users.classList.toggle("activep");
-  users1.classList.toggle("activep");
-  users2.classList.toggle("activep");
-  users3.classList.toggle("activep");
 });
+//for reports dropdown
 const hamburgerReports = document.querySelector(
   ".ham-reports"
 ) as HTMLDivElement;
 const contentArrow2 = document.querySelector(
   ".arrow-down-2"
 ) as HTMLImageElement;
-const reports = document.querySelector(".reports") as HTMLDivElement;
-const reports1 = document.querySelector(".reports1") as HTMLDivElement;
-const reports2 = document.querySelector(".reports2") as HTMLDivElement;
+const reports: NodeListOf<Element> = document.querySelectorAll(".reports");
 
 contentArrow2.addEventListener("click", function (event: MouseEvent) {
-  reports.classList.toggle("hide-content");
-  reports1.classList.toggle("hide-content");
-  reports2.classList.toggle("hide-content");
-  reports.classList.toggle("activep");
-  reports1.classList.toggle("activep");
-  reports2.classList.toggle("activep");
+  reports.forEach((element: Element, index: number) => {
+    reports[index].classList.toggle("hide-content");
+    reports[index].classList.toggle("activep");
+  });
   hamburgerReports.classList.toggle("activep");
   contentArrow2.classList.toggle("invert");
 });
+
+// for dummy dropdown
 const hamburgerAdmin = document.querySelector(".ham-admin") as HTMLDivElement;
 const contentArrow3 = document.querySelector(
   ".arrow-down-3"
 ) as HTMLImageElement;
-const dummy = document.querySelector(".dummy") as HTMLDivElement;
-const dummy1 = document.querySelector(".dummy1") as HTMLDivElement;
 
+const dummy: NodeListOf<Element> = document.querySelectorAll(".dummy");
 contentArrow3.addEventListener("click", function (event: MouseEvent) {
-  dummy.classList.toggle("hide-content");
-  dummy1.classList.toggle("hide-content");
-  dummy.classList.toggle("activep");
-  dummy1.classList.toggle("activep");
+  dummy.forEach((element: Element, index: number) => {
+    dummy[index].classList.toggle("hide-content");
+
+    dummy[index].classList.toggle("activep");
+  });
   hamburgerAdmin.classList.toggle("activep");
   contentArrow3.classList.toggle("invert");
 });
