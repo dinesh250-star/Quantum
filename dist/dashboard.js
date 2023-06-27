@@ -118,54 +118,6 @@ const favouriteHandler = (event) => {
         imgElement.src = "http://127.0.0.1:5500/assets/icons/favourite.svg";
     }
 };
-const hamburgerMenu = document.querySelector("#ham");
-const hamburgerMenuDropdown = document.querySelector(".hamburger-menu-dropdown");
-hamburgerMenu.addEventListener("mouseover", function () {
-    console.log("hover");
-    hamburgerMenuDropdown.style.display = "inline-block";
-});
-hamburgerMenuDropdown.addEventListener("mouseover", function () {
-    console.log("hover");
-    hamburgerMenuDropdown.style.display = "inline-block";
-});
-hamburgerMenu.addEventListener("mouseout", function () {
-    hamburgerMenuDropdown.style.display = "none";
-});
-hamburgerMenuDropdown.addEventListener("mouseout", function () {
-    hamburgerMenuDropdown.style.display = "none";
-});
-const alertMenu = document.querySelector("#alert");
-const alertMenuDropdown = document.querySelector(".alert-menu-dropdown");
-alertMenu.addEventListener("mouseover", function () {
-    console.log("hover");
-    alertMenuDropdown.style.display = "inline-block";
-});
-alertMenuDropdown.addEventListener("mouseover", function () {
-    console.log("hover");
-    alertMenuDropdown.style.display = "inline-block";
-});
-alertMenu.addEventListener("mouseout", function () {
-    alertMenuDropdown.style.display = "none";
-});
-alertMenuDropdown.addEventListener("mouseout", function () {
-    alertMenuDropdown.style.display = "none";
-});
-const announcementMenu = document.querySelector("#announcement");
-const announcementMenuDropdown = document.querySelector(".announcement-menu-dropdown");
-announcementMenu.addEventListener("mouseover", function () {
-    console.log("hover");
-    announcementMenuDropdown.style.display = "inline-block";
-});
-announcementMenuDropdown.addEventListener("mouseover", function () {
-    console.log("hover");
-    announcementMenuDropdown.style.display = "inline-block";
-});
-announcementMenu.addEventListener("mouseout", function () {
-    announcementMenuDropdown.style.display = "none";
-});
-announcementMenuDropdown.addEventListener("mouseout", function () {
-    announcementMenuDropdown.style.display = "none";
-});
 const contentArrow = document.querySelector(".arrow-down");
 const hamburgerContents = document.querySelector(".ham-contents");
 const content1 = document.querySelector(".content-1");

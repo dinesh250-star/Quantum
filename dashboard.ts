@@ -129,64 +129,92 @@ const favouriteHandler = (event: MouseEvent) => {
     imgElement.src = "http://127.0.0.1:5500/assets/icons/favourite.svg";
   }
 };
-const hamburgerMenu = document.querySelector("#ham") as HTMLDivElement;
-const hamburgerMenuDropdown = document.querySelector(
-  ".hamburger-menu-dropdown"
-) as HTMLDivElement;
-hamburgerMenu.addEventListener("mouseover", function () {
-  console.log("hover");
-  hamburgerMenuDropdown.style.display = "inline-block";
-});
-hamburgerMenuDropdown.addEventListener("mouseover", function () {
-  console.log("hover");
-  hamburgerMenuDropdown.style.display = "inline-block";
-});
-hamburgerMenu.addEventListener("mouseout", function () {
-  hamburgerMenuDropdown.style.display = "none";
-});
-hamburgerMenuDropdown.addEventListener("mouseout", function () {
-  hamburgerMenuDropdown.style.display = "none";
-});
+// const hamburgerMenu = document.querySelector("#ham") as HTMLDivElement;
+// const hamburgerMenuDropdown = document.querySelector(
+//   ".hamburger-menu-dropdown"
+// ) as HTMLDivElement;
+// const hamburgerContainer = document.querySelector(
+//   ".hamburger-container"
+// ) as HTMLDivElement;
+// hamburgerContainer.addEventListener("mouseover", function () {
+//   console.log("hover");
 
-const alertMenu = document.querySelector("#alert") as HTMLDivElement;
-const alertMenuDropdown = document.querySelector(
-  ".alert-menu-dropdown"
-) as HTMLDivElement;
-alertMenu.addEventListener("mouseover", function () {
-  console.log("hover");
-  alertMenuDropdown.style.display = "inline-block";
-});
-alertMenuDropdown.addEventListener("mouseover", function () {
-  console.log("hover");
-  alertMenuDropdown.style.display = "inline-block";
-});
-alertMenu.addEventListener("mouseout", function () {
-  alertMenuDropdown.style.display = "none";
-});
-alertMenuDropdown.addEventListener("mouseout", function () {
-  alertMenuDropdown.style.display = "none";
-});
+//   setTimeout(() => {
+//     hamburgerMenuDropdown.style.display = "inline-block";
+//   }, 200);
+// });
+// hamburgerContainer.addEventListener("mouseout", function () {
+//   console.log("hover");
 
-const announcementMenu = document.querySelector(
-  "#announcement"
-) as HTMLDivElement;
-const announcementMenuDropdown = document.querySelector(
-  ".announcement-menu-dropdown"
-) as HTMLDivElement;
-announcementMenu.addEventListener("mouseover", function () {
-  console.log("hover");
-  announcementMenuDropdown.style.display = "inline-block";
-});
-announcementMenuDropdown.addEventListener("mouseover", function () {
-  console.log("hover");
-  announcementMenuDropdown.style.display = "inline-block";
-});
-announcementMenu.addEventListener("mouseout", function () {
-  announcementMenuDropdown.style.display = "none";
-});
-announcementMenuDropdown.addEventListener("mouseout", function () {
-  announcementMenuDropdown.style.display = "none";
-});
+//   setTimeout(() => {
+//     hamburgerMenuDropdown.style.display = "none";
+//   }, 200);
+// });
+// hamburgerMenu.addEventListener("mouseover", function () {
+//   console.log("hover");
+
+//   setTimeout(() => {
+//     hamburgerMenuDropdown.style.display = "inline-block";
+//   }, 300);
+// });
+// hamburgerMenuDropdown.addEventListener("mouseover", function () {
+//   console.log("hover");
+
+//   hamburgerMenuDropdown.style.display = "inline-block";
+// });
+// hamburgerMenu.addEventListener("mouseout", function () {
+//   setTimeout(() => {
+//     hamburgerMenuDropdown.style.display = "none";
+//   }, 500);
+// });
+// hamburgerMenuDropdown.addEventListener("mouseout", function () {
+//   hamburgerMenuDropdown.style.display = "none";
+// });
+
+// const alertMenu = document.querySelector("#alert") as HTMLDivElement;
+// const alertMenuDropdown = document.querySelector(
+//   ".alert-menu-dropdown"
+// ) as HTMLDivElement;
+// alertMenu.addEventListener("mouseover", function () {
+//   console.log("hover");
+//   alertMenuDropdown.style.display = "inline-block";
+// });
+// alertMenuDropdown.addEventListener("mouseover", function () {
+//   console.log("hover");
+//   alertMenuDropdown.style.display = "inline-block";
+// });
+// alertMenu.addEventListener("mouseout", function () {
+//   alertMenuDropdown.style.display = "none";
+// });
+// alertMenuDropdown.addEventListener("mouseout", function () {
+//   alertMenuDropdown.style.display = "none";
+// });
+
+// const announcementMenu = document.querySelector(
+//   "#announcement"
+// ) as HTMLDivElement;
+// const announcementMenuDropdown = document.querySelector(
+//   ".announcement-menu-dropdown"
+// ) as HTMLDivElement;
+
+// announcementMenu.addEventListener("mouseover", function () {
+//   announcementMenuDropdown.classList.toggle("open-menu");
+// });
+// announcementMenuDropdown.addEventListener("mouseover", function () {
+//   announcementMenuDropdown.style.display = "inline-block";
+// });
+// announcementMenu.addEventListener("mouseout", function (event: MouseEvent) {
+//   announcementMenuDropdown.classList.toggle("open-menu");
+// });
+
+// announcementMenuDropdown.addEventListener(
+//   "mouseout",
+//   function (event: MouseEvent) {
+//     event.stopPropagation();
+
+//     announcementMenuDropdown.style.display = "none";
+//   }
+// );
 
 const contentArrow = document.querySelector(".arrow-down") as HTMLImageElement;
 const hamburgerContents = document.querySelector(
