@@ -156,3 +156,27 @@ contentArrow3.addEventListener("click", function (event) {
     hamburgerAdmin.classList.toggle("activep");
     contentArrow3.classList.toggle("invert");
 });
+const alertMenuDropdown = document.querySelector(".alert-menu-dropdown");
+const alertContainer = document.querySelector(".alert-container");
+alertContainer.addEventListener("mouseover", function () {
+    console.log("over");
+    alertMenuDropdown.style.minWidth = "315px";
+    alertMenuDropdown.style.minHeight = " 584px";
+    alertMenuDropdown.style.maxHeight = " 584px";
+    alertMenuDropdown.style.maxWidth = "315px";
+    alertMenuDropdown.style.opacity = "1";
+    alertMenuDropdown.style.visibility = "visible";
+    alertMenuDropdown.style.transform = "translateY(0);";
+    alertMenuDropdown.style.zIndex = "10";
+});
+alertContainer.addEventListener("mouseout", function () {
+    console.log("mouseout");
+    alertMenuDropdown.style.minWidth = "0";
+    alertMenuDropdown.style.minHeight = "0";
+    alertMenuDropdown.style.maxHeight = "0";
+    alertMenuDropdown.style.maxWidth = "0";
+    alertMenuDropdown.style.opacity = "0";
+    alertMenuDropdown.style.visibility = "hidden";
+    alertMenuDropdown.style.transform = "translateY(-3em);";
+    alertMenuDropdown.style.zIndex = "-1";
+});
