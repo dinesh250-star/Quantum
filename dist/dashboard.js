@@ -180,3 +180,51 @@ alertContainer.addEventListener("mouseout", function () {
     alertMenuDropdown.style.transform = "translateY(-3em);";
     alertMenuDropdown.style.zIndex = "-1";
 });
+const announcementMenuDropdown = document.querySelector(".announcement-menu-dropdown");
+const announcementContainer = document.querySelector(".announcement-container");
+announcementContainer.addEventListener("mouseover", function () {
+    console.log("over");
+    announcementMenuDropdown.style.minWidth = "315px";
+    announcementMenuDropdown.style.minHeight = " 584px";
+    announcementMenuDropdown.style.maxHeight = " 584px";
+    announcementMenuDropdown.style.maxWidth = "315px";
+    announcementMenuDropdown.style.opacity = "1";
+    announcementMenuDropdown.style.visibility = "visible";
+    announcementMenuDropdown.style.transform = "translateY(0);";
+    announcementMenuDropdown.style.zIndex = "10";
+});
+announcementContainer.addEventListener("mouseout", function () {
+    console.log("mouseout");
+    announcementMenuDropdown.style.minWidth = "0";
+    announcementMenuDropdown.style.minHeight = "0";
+    announcementMenuDropdown.style.maxHeight = "0";
+    announcementMenuDropdown.style.maxWidth = "0";
+    announcementMenuDropdown.style.opacity = "0";
+    announcementMenuDropdown.style.visibility = "hidden";
+    announcementMenuDropdown.style.transform = "translateY(-3em);";
+    announcementMenuDropdown.style.zIndex = "-1";
+});
+const hamburgerMenuDropdown = document.querySelector(".hamburger-menu-dropdown");
+const hamburgerContainer = document.querySelector(".hamburger-container");
+hamburgerContainer.addEventListener("mouseover", function () {
+    console.log("over");
+    hamburgerMenuDropdown.style.minWidth = "200px";
+    hamburgerMenuDropdown.style.minHeight = "auto";
+    hamburgerMenuDropdown.style.maxHeight = "900px";
+    hamburgerMenuDropdown.style.maxWidth = "280px";
+    hamburgerMenuDropdown.style.opacity = "1";
+    hamburgerMenuDropdown.style.visibility = "visible";
+    hamburgerMenuDropdown.style.transform = "translateY(0);";
+    hamburgerMenuDropdown.style.zIndex = "10";
+});
+hamburgerContainer.addEventListener("mouseout", function () {
+    console.log("mouseout");
+    hamburgerMenuDropdown.style.minWidth = "0";
+    hamburgerMenuDropdown.style.minHeight = "0";
+    hamburgerMenuDropdown.style.maxHeight = "0";
+    hamburgerMenuDropdown.style.maxWidth = "0";
+    hamburgerMenuDropdown.style.opacity = "0";
+    hamburgerMenuDropdown.style.visibility = "hidden";
+    hamburgerMenuDropdown.style.transform = "translateY(-3em);";
+    hamburgerMenuDropdown.style.zIndex = "-1";
+});
